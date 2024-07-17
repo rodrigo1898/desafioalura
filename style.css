@@ -1,0 +1,134 @@
+@import url( 'href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+:root {
+    --cor-primaria: #0A3871 ; 
+    --cor-secundaria: white ; 
+    --cor-terciaria: hsl(0, 0%, 0%);
+
+}
+*{
+    padding :0%;
+    margin: 0% ;
+}
+.cabecalho{
+    padding: 12px;
+    
+}
+
+.body {
+    display: flex;
+    justify-content:space-evenly ;
+
+}
+
+.container{
+    display :flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 1% 40% 0% 0%;
+    display: flex;
+    margin-right: 10rem;
+    justify-content: space-evenly;
+    margin-top: -40px;
+}
+
+.lado__esquerdo {
+    display: flex;
+    flex-direction: column;
+}
+.lado__direito {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.opcoes{
+    border-radius: 16px;
+    background-color: var(--cor-primaria);
+    padding: 10px ;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    margin-top: 1rem;
+    margin-right: 1 rem;
+    color: white;
+    
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    gap : 10%;
+    
+   
+}
+.botao{
+    border-radius: 16px;
+    background:var(--cor-primaria);
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    margin-top: 2rem;
+    color: white;
+
+}
+input[type="text"] {
+    width: 400px;
+    height: 400px;
+    font-size: 16px; 
+    border: 1px solid var(--cor-primaria); 
+    border-radius: 4px; 
+    color: #0A3871;
+    font-family: 'inter', sans-serif;
+    font-size: 24px;
+    padding: 0%;
+    margin: 0%;
+    
+}
+.area__input{
+    padding: 0%;
+    margin-top: 0%;
+    
+}
+.arearesultado{
+    width: 400px; 
+    height: 390px; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid var(--cor-primaria); 
+    border-radius: 4px; 
+    color: #0A3871;
+    font-family: 'inter', sans-serif;
+    font-size: 24px;
+
+}
+.rodape{
+    color: white;
+    background-color:var(--cor-primaria);
+    padding: 24px;
+    text-align: center;
+    font-family: 'inter' , sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+@media (max-width : 1200px) {
+    .container{
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: space-around;
+        align-items:center;
+        margin-top: 10px;
+        padding: 5%;
+        
+    }
+    .rodape {
+        padding: 10px;
+       margin-top: 100px;
+       font-size: 0.5rem;
+    }
+    .lado__direito {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+    

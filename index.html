@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projeto de Criptografia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <script src="cripto.js" defer></script> 
+</head>
+<body>
+    <header class ="cabecalho">
+        <img src="./assets/logo.png" alt="logo" >
+    </header>
+    <main>
+        <div class="container">
+            <div class = "lado__esquerdo">
+                    <div class="entrada">
+                          <input type="text" id="inputTexto" placeholder="Digite seu texto aqui " class="area__input"  >
+                                 
+                    </div>
+                    <div>
+                         <img src = "./assets/simboloalerta.png"> 
+                    </div>
+                    <div class="opcoes">
+                          <input type="radio" id="opcaoCriptografar" name="opcao" value="criptografar" checked>
+                          <label for="opcaoCriptografar">Criptografar</label>
+                          <input type="radio" id="opcaoDescriptografar" name="opcao" value="descriptografar">
+                          <label for="opcaoDescriptografar">Descriptografar</label>
+                  </div>
+            </div>
+            <div class="lado__direito">   
+                    <div class="botoes">
+                         <button class = "botao"onclick="processarTexto()">iniciar</button>
+                         <button class = "botao"onclick="copiarTexto()">Copiar</button>
+                    </div>
+                    <div class="resultado">
+                         <textarea id="textoResultado" placeholder= "" class="arearesultado" readonly></textarea>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por rodrigo para um desafio da alura .</p>
+    </footer>
+</body>
+</html>
